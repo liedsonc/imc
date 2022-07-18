@@ -16,7 +16,7 @@ import './index.css'
 
   let calcImc = (event )=> {
     event.preventDefault()
-    if(peso === 0 || altura === 0 ){
+    if(peso === "" || altura === "" ){
       alert("Por favor, digite sua altura e seu peso!")
     } else {
       let imc = (peso/(altura*altura))
